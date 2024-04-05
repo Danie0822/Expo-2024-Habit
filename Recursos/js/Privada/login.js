@@ -10,4 +10,5 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.add('light-mode');
         logoImage.src = '../../recursos/img/privada/logo.png';
     }
+    
 });

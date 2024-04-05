@@ -100,5 +100,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".toggle-btns").addEventListener("click", function() {
             document.getElementById("sidebar").classList.toggle("expand");
         });
+        
     });
     

@@ -4,6 +4,7 @@ CREATE DATABASE IF NOT EXISTS Expo2024 CHARACTER SET utf8mb4 COLLATE utf8mb4_uni
 
 USE Expo2024;
 
+
 -- Tabla para almacenar información de los clientes
 CREATE TABLE tb_clientes (
     id_cliente INT AUTO_INCREMENT PRIMARY KEY,

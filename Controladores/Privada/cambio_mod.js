@@ -1,4 +1,4 @@
-/* funcion de cambio de modo  */
+/* funcion de cambio de modo   */
 function toggleMode() {
     const body = document.body;
     const isLightMode = body.classList.contains('light-mode');
