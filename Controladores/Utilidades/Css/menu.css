@@ -294,7 +294,7 @@ a.menu-link:hover {
     background: var(--color-textfield);
     border-color:  #000000;
     border-radius: 10px; 
-    color: var(--color-titulo-encabezado);
+    color: var(--color-titulo-encabezado );
 }
 .custom-boton{
     width: 60px;
