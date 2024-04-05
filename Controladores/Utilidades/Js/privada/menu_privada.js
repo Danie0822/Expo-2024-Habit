@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </li>
         </ul>
         <div class="sidebar-footer">
-            <a href="#" class="menu-link">
+            <a href="./login.html" class="menu-link">
                 <i class="mdi mdi-logout"></i>
                 <span>Cerrar Sesión</span>
             </a>
