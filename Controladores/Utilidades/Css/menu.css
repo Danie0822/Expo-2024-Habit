@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Definición de variables de colores */
+:root {
+    /* Modo claro */
+    --color-titulo-light: #1E1EAE; /* Azul como color de título */
+    --color-fondo-light: #F7F7F7;
+    --color-blanco-light: #FFFFFF;
+    --color-borde-transparente-light: transparent;
+    --color-borde-hover-light: #1E1EAE;
+    --color-fondo-hover-light: rgba(30, 30, 174, 0.1);
+    --color-fondo-hover-menu-light: rgba(255, 255, 255, .075);
+    --color-icono-salir-hover-light: #FF5733;
+    --color-fondo-tabla-light: #FFFFFF;
+    --color-boton-toggle-light: #1E1EAE;
+    --color-icons-light: #000000;
+    --color-sombra-light:rgba(0, 0, 0, 0.1);
+    /* Modo oscuro */
+    --color-titulo-dark: #FFFFFF;
+    --color-fondo-dark: #131313;
+    --color-blanco-dark: #0D0D0D;
+    --color-borde-transparente-dark: transparent;
+    --color-borde-hover-dark: #FFFFFF;
+    --color-fondo-hover-dark: rgba(255, 255, 255, 0.1);
+    --color-fondo-hover-menu-dark: rgba(19, 19, 222, 0.075);
+    --color-icono-salir-hover-dark: #FF5733;
+    --color-fondo-tabla-dark: #0D0D0D;
+    --color-boton-toggle-dark: #1E1EAE; 
+    --color-icons-dark: #ffffff;
+    --color-sombra-dark:rgba(96, 90, 90, 0.1);
+
+}
+
+/* Selectores de estilo para el modo claro y oscuro */
+.light-mode {
+    --color-titulo: var(--color-titulo-light);
+    --color-fondo: var(--color-fondo-light);
+    --color-blanco: var(--color-blanco-light);
+    --color-borde-transparente: var(--color-borde-transparente-light);
+    --color-borde-hover: var(--color-borde-hover-light);
+    --color-fondo-hover: var(--color-fondo-hover-light);
+    --color-fondo-hover-menu: var(--color-fondo-hover-menu-light);
+    --color-icono-salir-hover: var(--color-icono-salir-hover-light);
+    --color-fondo-tabla: var(--color-fondo-tabla-light);
+    --color-boton-toggle: var(--color-boton-toggle-light);
+    --color-icons: var(--color-icons-light);
+    --color-sombra: var(---color-sombra-light);
+}
+
+/* Selectores de estilo para el modo oscuro */
+.dark-mode {
+    --color-titulo: var(--color-titulo-dark);
+    --color-fondo: var(--color-fondo-dark);
+    --color-blanco: var(--color-blanco-dark);
+    --color-borde-transparente: var(--color-borde-transparente-dark);
+    --color-borde-hover: var(--color-borde-hover-dark);
+    --color-fondo-hover: var(--color-fondo-hover-dark);
+    --color-fondo-hover-menu: var(--color-fondo-hover-menu-dark);
+    --color-icono-salir-hover: var(--color-icono-salir-hover-dark);
+    --color-fondo-tabla: var(--color-fondo-tabla-dark);
+    --color-boton-toggle: var(--color-boton-toggle-dark);
+    --color-icons: var(--color-icons-dark);
+    --color-sombra: var(--color-sombra-dark);
+}
+
+
+/* Diseño básico de la página */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-titulo);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-fondo);
+}
+
+.flex {
+    display: flex;
+}
+
+.main {
+    min-height: 100vh;
+    overflow: hidden;
+    transition: all 0.45s ease-in-out;
+    background-color: var(--color-fondo);
+}
+
+/* Sidebar */
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px var( --color-sombra);
+}
+/* funcion de expandir  */
+#sidebar.expand {
+    width: 250px;
+    min-width: 210px;
+}
+/* Boton de logo */
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #434446;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: var(--color-icons);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.menu-link span,
+#sidebar:not(.expand) a.hover span {
+    display: none;
+}
+
+.sidebar-menu {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+/*Iconos  */
+.menu-link,
+.hover {
+    padding: .75rem 1.25rem;
+    color: var(--color-icons);
+    display: block;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover .menu-link {
+    background-color: var(--color-fondo-hover);
+    border-left-color: var(--color-borde-hover);
+}
+
+.menu-item:hover .menu-link i,
+.menu-item:hover .hover i {
+    color: var(--color-titulo);
+}
+
+.menu-link i,
+.hover i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+/* Hover de botones */
+.toggle-btn:hover i {
+    transform: rotate(90deg) scale(1.1);
+    color: #06065E;
+}
+
+a.hover:hover {
+    border-left: 3px solid var(--color-borde-hover);
+    border-radius: 10px;
+}
+
+a.menu-link:hover {
+    background-color: var(--color-fondo-hover-menu);
+    border-left: 3px solid var(--color-borde-hover);
+}
+
+.menu-item {
+    position: relative;
+}
+/* diseño de sub menu  */
+#sidebar:not(.expand) .menu-item .menu-dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: var(--color-fondo);
+    min-width: 10rem;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);/
+}
+
+#sidebar:not(.expand) .menu-item:hover .has-dropdown+.menu-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+/* flechas de dropdown */
+#sidebar.expand .menu-link[data-bs-toggle="collapse"]::after {
+    content: '\f106';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 1.5rem;
+    transition: transform 0.2s ease-out;
+}
+
+#sidebar.expand .menu-link[data-bs-toggle="collapse"].collapsed::after {
+    content: '\f107';
+    transition: transform 0.2s ease-out;
+}
+
+.menu-link:hover i {
+    color: var(--color-icono-salir-hover);
+    transform: rotate(180deg) scale(1.2);
+}
+
+/* Table cambio de modo */
+.table {
+    background-color: var(--color-fondo-tabla);
+    color:  var(--color-icons);
+}
+
+.toggle-btns {
+    background-color: var(--color-boton-toggle);
+    border: none;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.toggle-btns img {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-menu .Paddding {
+    margin-bottom: 10px;
+}
+.sidebar-footer .menu-link:hover {
+    background-color: var(--color-fondo-hover); 
+}

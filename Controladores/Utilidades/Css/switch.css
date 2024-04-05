@@ -1,0 +1,58 @@
+/* switch de cambio de modo   */
+.switch-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.modo-switch {
+    display: none;
+}
+
+.modo-label {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background-color: #e9eee9;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.modo-label:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.modo-label:after {
+    content: '🌞';
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+}
+
+/*  cambio de modo cuando este en checked  */
+.modo-switch:checked + .modo-label {
+    background-color: #000000;
+}
+
+.modo-switch:checked + .modo-label:before {
+    transform: translateX(30px);
+}
+
+.modo-switch:checked + .modo-label:after {
+    content: '🌙';
+    left: calc(100%);
+    transform: translateX(-100%);
+}
+
+
