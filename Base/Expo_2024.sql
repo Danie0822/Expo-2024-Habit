@@ -14,6 +14,15 @@ CREATE TABLE tb_clientes (
     estado_cliente ENUM('activo', 'inactivo') DEFAULT ('activo') NOT NULL
 ) ENGINE=INNODB;
 
+-- Tabla para almacenar información de los blogs 
+CREATE TABLE tb_blogs (
+    id_blog INT AUTO_INCREMENT PRIMARY KEY,
+    titulo_blog VARCHAR(100) NOT NULL,
+    descripcion_blog TEXT NOT NULL,
+    fecha_inscripcion DATE DEFAULT (CURRENT_DATE),
+    imagen_blog VARCHAR(255) NOT NULL
+) ENGINE=INNODB;
+
 -- Tabla para almacenar información de los administradores
 CREATE TABLE tb_administradores (
     id_administrador INT AUTO_INCREMENT PRIMARY KEY,

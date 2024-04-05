@@ -1,18 +1,18 @@
 /* Botones de las tablas  */
-.btn-action {
-    padding: 10px;
-    border-radius: 10;
-    transition: all 0.3s ease;
-    margin: 0 3px;
-}
 
-.btn-primary {
+.btn-eleminar {
+    background-color: #f3f6f9;
+    border-color: #f3f6f9;
+    color: #ae1e1e; 
+}
+.btn-edit {
     background-color: #f3f6f9;
     border-color: #f3f6f9;
     color: #1E1EAE; 
 }
 
-.btn-primary:hover {
+.btn-tabla:hover {
     background-color: #1e1eae;
     color: #FFF; 
 }
+

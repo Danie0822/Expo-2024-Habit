@@ -5,6 +5,7 @@
 :root {
     /* Modo claro */
     --color-titulo-light: #1E1EAE; /* Azul como color de título */
+    --color-titulo-encabezado-light: #353537; /* Azul como color de título */
     --color-fondo-light: #F7F7F7;
     --color-blanco-light: #FFFFFF;
     --color-borde-transparente-light: transparent;
@@ -16,8 +17,12 @@
     --color-boton-toggle-light: #1E1EAE;
     --color-icons-light: #000000;
     --color-sombra-light:rgba(0, 0, 0, 0.1);
+    --color-textfield-light:#ffffff;
+    --color-btn-light: #1E1EAE; /* Azul como color de título */
+    
     /* Modo oscuro */
     --color-titulo-dark: #FFFFFF;
+    --color-titulo-encabezado-dark: #FFFFFF; /* Azul como color de título */
     --color-fondo-dark: #131313;
     --color-blanco-dark: #0D0D0D;
     --color-borde-transparente-dark: transparent;
@@ -25,10 +30,13 @@
     --color-fondo-hover-dark: rgba(255, 255, 255, 0.1);
     --color-fondo-hover-menu-dark: rgba(19, 19, 222, 0.075);
     --color-icono-salir-hover-dark: #FF5733;
-    --color-fondo-tabla-dark: #0D0D0D;
+    --color-fondo-tabla-dark: #1c1c1d;
     --color-boton-toggle-dark: #1E1EAE; 
     --color-icons-dark: #ffffff;
     --color-sombra-dark:rgba(96, 90, 90, 0.1);
+    --color-textfield-dark:#49494b;
+    --color-btn-dark: #49494b; /* Azul como color de título */
+
 
 }
 
@@ -46,6 +54,9 @@
     --color-boton-toggle: var(--color-boton-toggle-light);
     --color-icons: var(--color-icons-light);
     --color-sombra: var(---color-sombra-light);
+    --color-textfield: var(--color-textfield-light);
+    --color-titulo-encabezado: var( --color-titulo-encabezado-light);
+    --color-btn-encabezado: var(--color-btn-light);
 }
 
 /* Selectores de estilo para el modo oscuro */
@@ -62,6 +73,9 @@
     --color-boton-toggle: var(--color-boton-toggle-dark);
     --color-icons: var(--color-icons-dark);
     --color-sombra: var(--color-sombra-dark);
+    --color-textfield: var(--color-textfield-dark);
+    --color-titulo-encabezado: var( --color-titulo-encabezado-dark);
+    --color-btn-encabezado: var(--color-btn-dark);
 }
 
 
@@ -82,10 +96,19 @@ li {
     list-style: none;
 }
 
-h1 {
+h1,h2 {
     font-weight: 600;
     font-size: 1.5rem;
     color: var(--color-titulo);
+}
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-titulo-encabezado);
+}
+p {
+
+    color: var(--color-titulo-encabezado);
 }
 
 body {
@@ -262,3 +285,39 @@ a.menu-link:hover {
 .sidebar-footer .menu-link:hover {
     background-color: var(--color-fondo-hover); 
 }
+/* Text field */
+.form-control.custom-input:focus {
+    border-color: #000000; 
+    box-shadow: 0 0 0 0.2rem var( --color-sombra); 
+}
+.form-control.custom-input {
+    background: var(--color-textfield);
+    border-color:  #000000;
+    border-radius: 10px; 
+    color: var(--color-titulo-encabezado);
+}
+.custom-boton{
+    width: 60px;
+    min-width: 50px;
+    
+}
+
+.custom-color {
+    background-color: var(--color-btn-encabezado); 
+    border-color: var(--color-btn-encabezado); 
+    color: var(--color-fondo); 
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.custom-color:hover {
+    background-color: var(--color-btn-encabezado-hover); 
+    border-color: var(--color-btn-encabezado-hover); 
+    color: var(--color-titulo-encabezado); 
+}
+
+.custom-color:active {
+    color: var(--color-fondo); 
+}
+
+
+
