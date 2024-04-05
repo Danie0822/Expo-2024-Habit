@@ -1,0 +1,29 @@
+header {
+    background-color: white;
+}
+
+.nav-link:active {
+    color: #06065E;
+}
+
+.contactanosButton {
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+}
+
+button#btnContactanos:hover{
+    background-color: #faad14;
+}
+
+button#btnContactanos:active {
+    background-color: #faad14;
+}
+
+.amarrilo1 {
+    background-color: #FFBF3E;
+}
+
+.azul1 {
+    color: #030368;
+}
