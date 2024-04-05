@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="d-flex align-items-center">
             <a href="#" class="menu-link">
                 <button class="toggle-btns" type="button">
-                    <img src="../../Recursos/Img/Privada/logito.png" alt="Imagen de menú">
+                    <img src="../../recursos/img/privada/logito.png" alt="Imagen de menú">
                 </button>
             </a>
 

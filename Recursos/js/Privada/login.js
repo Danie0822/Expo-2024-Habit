@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (savedMode === 'dark') {
         body.classList.add('dark-mode');
-        logoImage.src = '../../Recursos/Img/Privada/logo-dark.png';
+        logoImage.src = '../../recursos/img/privada/logo-dark.png';
     } else {
         body.classList.add('light-mode');
-        logoImage.src = '../../Recursos/Img/Privada/logo.png';
+        logoImage.src = '../../recursos/img/privada/logo.png';
     }
 });
