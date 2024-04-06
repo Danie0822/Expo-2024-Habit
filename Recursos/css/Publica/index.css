@@ -1,0 +1,50 @@
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.title {
+    font-size: 250%;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Estilo para parte de mini estadisticas*/
+
+.datos {
+    margin-right: 2.5%;
+}
+
+.cardData {
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.textt {
+    font-size: 20px;
+    font-weight: 500;
+    color: #61656E;
+}
+
+.linea {
+    margin-bottom: 10%;
+    color: #61656E;
+}
+
+.porcentaje {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.desc {
+    font-weight: 600;
+    font-size: 200%;
+}
+
