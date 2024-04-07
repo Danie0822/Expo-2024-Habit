@@ -16,4 +16,3 @@ Esta es una aplicación web moderna diseñada para simplificar el proceso de com
 - **Listados de Propiedades**: Muestra una lista de propiedades disponibles para la venta o alquiler, con detalles completos y fotos.
 - **Formulario de Contacto**: Permite a los usuarios enviar consultas o solicitar información adicional sobre las propiedades.
 - **Gestión de Usuarios y Propiedades**: A través de la API de Node.js, se gestionarán los usuarios, propiedades y transacciones de manera segura y eficiente.
-- **Autenti
