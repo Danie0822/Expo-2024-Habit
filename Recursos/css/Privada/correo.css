@@ -30,7 +30,7 @@
     --color-background: var(--color-background-dark);
     --color-borde: var(--color-borde-dark);
 }
-
+/* diseño basicos  */
 body,
 html {
     height: 100%;
@@ -51,7 +51,7 @@ html {
     transform: translateY(-50px);
     animation: slideInUp 1s forwards 0.3s ease;
 }
-
+/* diseño de formulario  */
 .form-title {
     font-size: 28px;
     margin-bottom: 20px;
@@ -83,7 +83,7 @@ html {
 .input-group .form-control:focus {
     border-color: #0F0F70; 
 }
-
+/* diseño de botones  */
 .btn-primary {
     border-radius: 30px;
     padding: 15px 30px;
@@ -116,7 +116,7 @@ html {
     background-color: #011d77; 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
-
+/* diseño de boton de volver */
 .forgot-password-link {
     color: #6c757d; 
     text-decoration: none;
@@ -127,7 +127,7 @@ html {
 }
 
 .forgot-password-link:hover {
-    color: #0056b3; /* Color del enlace al pasar el mouse */
+    color: #0056b3; 
 }
 
 @keyframes slideInUp {
