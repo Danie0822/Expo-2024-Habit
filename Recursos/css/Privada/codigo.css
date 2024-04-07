@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+.code-input {
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 5px;
+    width: 50px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideInUp 1s forwards 0.5s ease;
+}
+
+.code-input:focus {
+    border-color: #666;
+    box-shadow: none; 
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

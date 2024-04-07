@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Recursos/css/Privada/correo.css">
+    <link rel="stylesheet" href="../../Recursos/css/Privada/codigo.css">
+    <title>Recuperacion de Contraseña </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6">
+                <!-- Card -->
+                <div class="card border-0 shadow">
+                    <div class="card-body p-5">
+                        <h2 class="form-title text-center mb-4">Recuperación de contraseña</h2>
+                        <div class="text-center mb-4">
+                            <img src="../../recursos/img/privada/logo.png" alt="Company Logo" class="logo imagen_logo">
+                        </div>
+                        <p class="form-description text-center mb-4">Por favor, introduce el código que recibiste por
+                            correo electrónico en el campo a continuación. </p>
+                        <!-- Formulario  -->
+                        <form>
+                            <div class="row justify-content-center mb-3">
+                                <div class="col-auto">
+                                    <!-- Pin -->
+                                    <input type="text" class="form-control code-input" maxlength="1"
+                                        pattern="[0-9a-zA-Z]" placeholder="-">
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" class="form-control code-input" maxlength="1"
+                                        pattern="[0-9a-zA-Z]" placeholder="-">
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" class="form-control code-input" maxlength="1"
+                                        pattern="[0-9a-zA-Z]" placeholder="-">
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" class="form-control code-input" maxlength="1"
+                                        pattern="[0-9a-zA-Z]" placeholder="-">
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" class="form-control code-input" maxlength="1"
+                                        pattern="[0-9a-zA-Z]" placeholder="-">
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" class="form-control code-input" maxlength="1"
+                                        pattern="[0-9a-zA-Z]" placeholder="-">
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <a  href="./cambio_clave.html" class="btn btn-primary rounded-pill" type="button">Confirmar</a>
+                            </div>
+                        </form>
+                        <div class="forgot-password text-center mt-3">
+                            <a href="./login.html" class="forgot-password-link">Volver al inicio de sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../recursos/js/privada/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
