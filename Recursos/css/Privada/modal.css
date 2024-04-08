@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h3.titulo {
+    position: relative;
+    font-family: "Inter ", sans-serif;
+    font-weight: 600;
+    padding-left: 12px;
+}
+
+label{
+    font-weight: 500;
+    color: #5C5C5C;
+}
+
+h3.titulo::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 100%;
+    background-color: #1E1EAE;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.tit {
+    padding-left: 15px;
+}
+
+.limpiar{
+    border-radius: 8px;
+}
+.modal-Administrador {
+    width: 900px;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.btn_nom {
+    border: none;
+}
+
+.custom-modal-width {
+    max-width: 650px;
+}
+
+.modal-footer {
+    background-color: #1E1EAE;
+}
+.btn-light{
+    border-radius: 10px;
+}
+
+.modal-content {
+    border-radius: 15px;
+    background-color: #EBEBEB;
+}
+
+.limpiar {
+    background-color: #1E1EAE;
+    border: none !important;
+}
+
+.modal-header.tit {
+    padding-top: 1.2rem;
+    /* Ajusta este valor según sea necesario */
+    padding-bottom: 0.5rem;
+    /* Ajusta este valor según sea necesario */
+}
+
+/* Quita el borde a los inputs */
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    /* Borde gris claro */
+    transition: border-color 0.3s;
+    /* Transición suave */
+}
+
+/* Cambia el color del borde al seleccionar el input */
+.form-control:focus {
+    border-color: #adb5bd;
+    /* Cambia a gris claro al seleccionar */
+    box-shadow: none;
+    /* Quita la sombra al seleccionar */
+}
+
+.form-select.btn_nom {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    /* Borde gris claro */
+    transition: border-color 0.3s;
+    /* Transición suave */
+}
+
+.form-select.btn_nom:focus {
+    border-color: #adb5bd;
+    /* Cambia a gris claro al seleccionar */
+    box-shadow: none;
+    /* Quita la sombra al seleccionar */
+}
