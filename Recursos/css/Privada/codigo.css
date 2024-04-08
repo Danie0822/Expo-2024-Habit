@@ -9,6 +9,7 @@
     opacity: 0;
     transform: translateY(-50px);
     animation: slideInUp 1s forwards 0.5s ease;
+    margin-top: 10px; /* Agrega un margen superior de 10px */
 }
 
 .code-input:focus {
