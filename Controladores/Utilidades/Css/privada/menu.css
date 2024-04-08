@@ -296,8 +296,8 @@ a.menu-link:hover {
     color: var(--color-titulo-encabezado );
 }
 .custom-boton{
-    width: 60px;
-    min-width: 50px;
+    width: 50px;
+    min-width: 40px;
     
 }
 
