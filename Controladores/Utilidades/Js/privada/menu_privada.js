@@ -9,11 +9,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     <img src="../../recursos/img/privada/logito.png" alt="Imagen de menú">
                 </button>
             </a>
-
             <div class="sidebar-logo">
-                <a href="#">
-                    HABBIT
+                <a>
+                    HABIT
                 </a>
+                <h6>
+                Inicio
+                </h6>    
             </div>
         </div>
 
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </li>
 
             <li class="menu-item Paddding">
-                <a href="#" class="menu-link">
+                <a href="/Views/Privada/propiedades.html" class="menu-link">
                     <i class="mdi mdi-home-city"></i>
                     <span>Propiedades</span>
                 </a>
