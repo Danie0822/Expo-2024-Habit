@@ -3,8 +3,10 @@
 /* Definición de variables de colores */
 :root {
     /* Modo claro */
-    --color-titulo-light: #1E1EAE; /* Azul como color de título */
-    --color-titulo-encabezado-light: #353537; /* Azul como color de título */
+    --color-titulo-light: #1E1EAE;
+    /* Azul como color de título */
+    --color-titulo-encabezado-light: #353537;
+    /* Azul como color de título */
     --color-fondo-light: #F7F7F7;
     --color-blanco-light: #FFFFFF;
     --color-borde-transparente-light: transparent;
@@ -15,13 +17,15 @@
     --color-fondo-tabla-light: #FFFFFF;
     --color-boton-toggle-light: #1E1EAE;
     --color-icons-light: #000000;
-    --color-sombra-light:rgba(0, 0, 0, 0.1);
-    --color-textfield-light:#ffffff;
-    --color-btn-light: #1E1EAE; /* Azul como color de título */
-    
+    --color-sombra-light: rgba(0, 0, 0, 0.1);
+    --color-textfield-light: #ffffff;
+    --color-btn-light: #1E1EAE;
+    /* Azul como color de título */
+
     /* Modo oscuro */
     --color-titulo-dark: #FFFFFF;
-    --color-titulo-encabezado-dark: #FFFFFF; /* Azul como color de título */
+    --color-titulo-encabezado-dark: #FFFFFF;
+    /* Azul como color de título */
     --color-fondo-dark: #131313;
     --color-blanco-dark: #0D0D0D;
     --color-borde-transparente-dark: transparent;
@@ -30,11 +34,12 @@
     --color-fondo-hover-menu-dark: rgba(19, 19, 222, 0.075);
     --color-icono-salir-hover-dark: #FF5733;
     --color-fondo-tabla-dark: #1c1c1d;
-    --color-boton-toggle-dark: #1E1EAE; 
+    --color-boton-toggle-dark: #1E1EAE;
     --color-icons-dark: #ffffff;
-    --color-sombra-dark:rgba(96, 90, 90, 0.1);
-    --color-textfield-dark:#49494b;
-    --color-btn-dark: #49494b; /* Azul como color de título */
+    --color-sombra-dark: rgba(96, 90, 90, 0.1);
+    --color-textfield-dark: #49494b;
+    --color-btn-dark: #49494b;
+    /* Azul como color de título */
 
 
 }
@@ -54,7 +59,7 @@
     --color-icons: var(--color-icons-light);
     --color-sombra: var(---color-sombra-light);
     --color-textfield: var(--color-textfield-light);
-    --color-titulo-encabezado: var( --color-titulo-encabezado-light);
+    --color-titulo-encabezado: var(--color-titulo-encabezado-light);
     --color-btn-encabezado: var(--color-btn-light);
 }
 
@@ -73,7 +78,7 @@
     --color-icons: var(--color-icons-dark);
     --color-sombra: var(--color-sombra-dark);
     --color-textfield: var(--color-textfield-dark);
-    --color-titulo-encabezado: var( --color-titulo-encabezado-dark);
+    --color-titulo-encabezado: var(--color-titulo-encabezado-dark);
     --color-btn-encabezado: var(--color-btn-dark);
 }
 
@@ -95,24 +100,40 @@ li {
     list-style: none;
 }
 
-h1,h2 {
+h1,
+h2 {
     font-weight: 600;
     font-size: 1.5rem;
     color: var(--color-titulo);
 }
+
 h2 {
     font-weight: 600;
     font-size: 1.5rem;
     color: var(--color-titulo-encabezado);
 }
+
 p {
 
     color: var(--color-titulo-encabezado);
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-fondo);
+}
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    background-color: var(--color-blanco);
+    flex-direction: column;
+    box-shadow: 0 0 20px var(--color-sombra);
+    margin-top: 15px;
+    margin-bottom: 16px;
+    height: 96vh;
+    margin-left: 10px;
 }
 
 .flex {
@@ -122,26 +143,16 @@ body {
 .main {
     min-height: 100vh;
     overflow: hidden;
-    transition: all 0.45s ease-in-out;
     background-color: var(--color-fondo);
 }
 
-/* Sidebar */
-#sidebar {
-    width: 70px;
-    min-width: 70px;
-    z-index: 1000;
-    transition: all .25s ease-in-out;
-    background-color: var(--color-blanco);
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 20px var( --color-sombra);
-}
+
 /* funcion de expandir  */
 #sidebar.expand {
     width: 250px;
     min-width: 210px;
 }
+
 /* Boton de logo */
 .toggle-btn {
     background-color: transparent;
@@ -203,6 +214,7 @@ body {
     font-size: 1.1rem;
     margin-right: .75rem;
 }
+
 /* Hover de botones */
 .toggle-btn:hover i {
     transform: rotate(90deg) scale(1.1);
@@ -222,6 +234,7 @@ a.menu-link:hover {
 .menu-item {
     position: relative;
 }
+
 /* diseño de sub menu  */
 #sidebar:not(.expand) .menu-item .menu-dropdown {
     position: absolute;
@@ -240,6 +253,7 @@ a.menu-link:hover {
     width: 100%;
     opacity: 1;
 }
+
 /* flechas de dropdown */
 #sidebar.expand .menu-link[data-bs-toggle="collapse"]::after {
     content: '\f106';
@@ -260,10 +274,15 @@ a.menu-link:hover {
     transform: rotate(180deg) scale(1.2);
 }
 
-/* Table cambio de modo */
+/* Estilos generales de la tabla */
 .table {
     background-color: var(--color-fondo-tabla);
-    color:  var(--color-icons);
+    color: var(--color-icons);
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
 }
 
 .toggle-btns {
@@ -281,42 +300,42 @@ a.menu-link:hover {
 .sidebar-menu .Paddding {
     margin-bottom: 10px;
 }
+
 .sidebar-footer .menu-link:hover {
-    background-color: var(--color-fondo-hover); 
+    background-color: var(--color-fondo-hover);
 }
+
 /* Text field */
 .form-control.custom-input:focus {
-    border-color: #000000; 
-    box-shadow: 0 0 0 0.2rem var( --color-sombra); 
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem var(--color-sombra);
 }
+
 .form-control.custom-input {
     background: var(--color-textfield);
-    border-color:  #000000;
-    border-radius: 10px; 
-    color: var(--color-titulo-encabezado );
+    border-color: #000000;
+    border-radius: 10px;
+    color: var(--color-titulo-encabezado);
 }
-.custom-boton{
-    width: 50px;
+
+.custom-boton {
+    width: 40px;
     min-width: 40px;
-    
+
 }
 
 .custom-color {
-    background-color: var(--color-btn-encabezado); 
-    border-color: var(--color-btn-encabezado); 
-    color: var(--color-fondo); 
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    background-color: var(--color-btn-encabezado);
+    border-color: var(--color-btn-encabezado);
+    color: var(--color-fondo);
 }
 
 .custom-color:hover {
-    background-color: var(--color-btn-encabezado-hover); 
-    border-color: var(--color-btn-encabezado-hover); 
-    color: var(--color-titulo-encabezado); 
+    background-color: var(--color-btn-encabezado-hover);
+    border-color: var(--color-btn-encabezado-hover);
+    color: var(--color-titulo-encabezado);
 }
 
 .custom-color:active {
-    color: var(--color-fondo); 
+    color: var(--color-fondo);
 }
-
-
-
