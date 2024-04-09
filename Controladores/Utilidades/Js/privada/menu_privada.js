@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </li>
 
             <li class="menu-item Paddding">
-                <a href="/Views/Privada/propiedades.html" class="menu-link">
+                <a href="./propiedades.html" class="menu-link">
                     <i class="mdi mdi-home-city"></i>
                     <span>Propiedades</span>
                 </a>
@@ -64,6 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="ejemplo.html" class="menu-link">
                     <i class="mdi mdi-message"></i>
                     <span>Conversaciones</span>
+                </a>
+            </li>
+            <li class="menu-item Paddding">
+                <a href="ejemplo.html" class="menu-link">
+                    <i class="mdi mdi-post"></i>
+                    <span>Blog</span>
                 </a>
             </li>
             <li class="menu-item Paddding">
