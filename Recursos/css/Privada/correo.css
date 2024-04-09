@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
 
 /* Definición de variables de colores */
 :root {
@@ -33,16 +33,15 @@
 /* diseño basicos  */
 body,
 html {
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     background-color: var(--color-fondo); 
     color: var(--color-color); 
-    margin: 0;
 }
 
 .card {
     background-color: var(--color-background); 
+    
 }
 
 .logo {
