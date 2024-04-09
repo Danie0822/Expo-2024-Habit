@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
 
 /* Definición de variables de colores */
 :root {
@@ -35,7 +36,8 @@
 body,
 html {
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     overflow-x: hidden;
     background-color: var(--color-fondo);
     color: var(--color-color);
