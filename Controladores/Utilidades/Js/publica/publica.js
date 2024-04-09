@@ -16,7 +16,7 @@ const loadTemplate = async () => {
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ms-4 mt-2">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../Publica/index.html">
                     <img src="../../Recursos/Img/Publica/logoAmarrillo.svg" alt="Logo de habbit" width="50" height="50">
                 </a>
                 <button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="collapse"
@@ -28,10 +28,10 @@ const loadTemplate = async () => {
                     <div class="col-9">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-10 d-flex justify-content-center">
                             <li class="nav-item m-3">
-                                <a class="nav-link azul1" aria-current="page" href="#">Acerca de habit</a>
+                                <a class="nav-link azul1" aria-current="page" href="#sobreNosotros">Acerca de habit</a>
                             </li>
                             <li class="nav-item m-3">
-                                <a class="nav-link azul1" href="#sobreNosotros">Sobre nosotros</a>
+                                <a class="nav-link azul1" href="#nuestroEquipo">Nuestro equipo</a>
                             </li>
                             <li class="nav-item m-3">
                                 <a class="nav-link azul1" href="#">Proyectos</a>
@@ -42,7 +42,7 @@ const loadTemplate = async () => {
                         </ul>
                     </div>
                     <span class="navbar-text col-2 justify-content-center">
-                        <a href="#" class="col-12">
+                        <a href="#contactanos" class="col-12">
                             <button id="btnContactanos" type="button" class="btn amarrilo1 contactanosButton col-12 text-white">
                                 Contáctanos
                             </button>
