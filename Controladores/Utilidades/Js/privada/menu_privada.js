@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     /* slider bar meter el html con js   */
     var sidebar = document.createElement("aside");
     sidebar.id = "sidebar";
@@ -10,12 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 </button>
             </a>
             <div class="sidebar-logo">
-                <a>
-                    HABIT
-                </a>
-                <h6>
-                Inicio
-                </h6>    
+            <a href="#">
+             HABBIT
+            <a>
+  
             </div>
         </div>
 
@@ -82,26 +80,26 @@ document.addEventListener("DOMContentLoaded", function() {
             </a>
         </div>
     `;
-        // Hacer insert despues de menu"
-        var menu = document.querySelector(".menu");
-        menu.parentNode.insertBefore(sidebar, menu.nextSibling);
-        const body = document.body;
+    // Hacer insert despues de menu"
+    var menu = document.querySelector(".menu");
+    menu.parentNode.insertBefore(sidebar, menu.nextSibling);
+    const body = document.body;
 
-         // poner el modo depediendo del usuario cambio "
-        const savedMode = localStorage.getItem('mode');
-        const modoSwitch = document.getElementById('modo-switch');
-       // Validar el modo "
-        if (savedMode === 'dark') {
-          body.classList.add('dark-mode');
-          modoSwitch.checked = true; 
-        } else {
-          body.classList.add('light-mode');
-        }
-    
-        // boton de expandir el menu 
-        document.querySelector(".toggle-btns").addEventListener("click", function() {
-            document.getElementById("sidebar").classList.toggle("expand");
-        });
-        
+    // poner el modo depediendo del usuario cambio "
+    const savedMode = localStorage.getItem('mode');
+    const modoSwitch = document.getElementById('modo-switch');
+    // Validar el modo "
+    if (savedMode === 'dark') {
+        body.classList.add('dark-mode');
+        modoSwitch.checked = true;
+    } else {
+        body.classList.add('light-mode');
+    }
+
+    // boton de expandir el menu 
+    document.querySelector(".toggle-btns").addEventListener("click", function () {
+        document.getElementById("sidebar").classList.toggle("expand");
     });
-    
+
+});
+
