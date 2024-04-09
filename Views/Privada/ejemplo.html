@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../Controladores/utilidades/Css/privada/menu.css">
     <link rel="stylesheet" href="../../Controladores/utilidades/Css/privada/switch.css">
     <link rel="stylesheet" href="../../Controladores/utilidades/Css/privada/tabla.css">
+    <link rel="stylesheet" href="../../Recursos/css/Privada/modal.css">
 
 </head>
 
@@ -20,81 +21,127 @@
     <div class="flex">
         <div class="menu"></div>
         <div class="main container-fluid p-3 ">
-                <div class="row align-items-center mb-3 custom-encabezado">
-                    <div class="col">
-                        <h2 class="mb-0">Administradores</h2>
-                        <p class="mb-1">4 Administradores</p>
+            <div class="row align-items-center mb-3 custom-encabezado">
+                <div class="col">
+                    <h2 class="mb-0">Administradores</h2>
+                    <p class="mb-1">4 Administradores</p>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <input type="text" class="form-control  custom-input" placeholder="Buscar" aria-label="Buscar"
+                            aria-describedby="button-addon2">
                     </div>
-                    <div class="col">
-                        <div class="input-group">
-                            <input type="text" class="form-control  custom-input" placeholder="Buscar"
-                                aria-label="Buscar" aria-describedby="button-addon2">
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn custom-boton custom-color"><i class="mdi mdi-account-plus"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table custom-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Marc</td>
+                            <td>marc@example.com</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-edit"
+                                    data-bs-toggle="modal" data-bs-target="#createAdmin">
+                                    <i class="mdi mdi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-eleminar">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>jacob@example.com</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-edit"
+                                    data-bs-toggle="modal" data-bs-target="#createAdmin">
+                                    <i class="mdi mdi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-eleminar">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>larry@example.com</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-edit"
+                                    data-bs-toggle="modal" data-bs-target="#createAdmin">
+                                    <i class="mdi mdi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-eleminar">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--MODAL PARA CREAR ADMINISTRADOR-->
+    <div class="modal fade " id="createAdmin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-width">
+            <div class="modal-content">
+                <div class="modal-header tit no-border">
+                    <div class="tit">
+                        <h3 class="titulo pl-2" style="color:#3C4242;">Crear Administrador </h3>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-2">
+                        <div class="col-md-8 btn_nom">
+                            <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="col-md-4 btn_nom">
+                            <label for="telefono" class="col-sm-2 col-form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono">
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="btn custom-boton custom-color"><i
-                                    class="mdi mdi-account-plus"></i>
-                            </button>
-
+                    <div class="row mb-3">
+                        <div class="col-md-8 btn_nom">
+                            <label for="nombre" class="col-sm-2 col-form-label">Correo</label>
+                            <input type="Username" class="form-control" id="nombre">
+                        </div>
+                        <div class="col-md-4 btn_nom">
+                            <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Rol</label>
+                            <select class="form-select btn_nom" id="exampleFormControlSelect1">
+                                <option>Agente Inmobilario</option>
+                                <option>Super Admin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12 btn_nom">
+                            <label for="nombre" class="col-sm-2 col-form-label">Contraseña</label>
+                            <input type="password" class="form-control">
                         </div>
                     </div>
                 </div>
-
-
-                <div class="table-responsive">
-                    <table class="table custom-table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Correo</th>
-                                <th scope="col">Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Marc</td>
-                                <td>marc@example.com</td>
-                                <td>
-                                    <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-edit">
-                                        <i class="mdi mdi-pencil"></i>
-                                    </button>
-                                    <button type="button"
-                                        class="btn btn-sm btn-action btn-primary btn-tabla btn-eleminar">
-                                        <i class="mdi mdi-delete"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Jacob</td>
-                                <td>jacob@example.com</td>
-                                <td>
-                                    <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-edit">
-                                        <i class="mdi mdi-pencil"></i>
-                                    </button>
-                                    <button type="button"
-                                        class="btn btn-sm btn-action btn-primary btn-tabla btn-eleminar">
-                                        <i class="mdi mdi-delete"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Larry</td>
-                                <td>larry@example.com</td>
-                                <td>
-                                    <button type="button" class="btn btn-sm btn-action btn-primary btn-tabla btn-edit">
-                                        <i class="mdi mdi-pencil"></i>
-                                    </button>
-                                    <button type="button"
-                                        class="btn btn-sm btn-action btn-primary btn-tabla btn-eleminar">
-                                        <i class="mdi mdi-delete"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light limpiar "
+                        style="color: white; font-weight: 600;">Limpiar</button>
+                    <button type="button" class="btn btn-light" style="font-weight: 600;">Crear</button>
                 </div>
-            
+            </div>
         </div>
     </div>
     <script src="../../Controladores/utilidades/js/privada/menu_privada.js"></script>

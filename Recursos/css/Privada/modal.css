@@ -1,3 +1,5 @@
+/*Estilo del modal para crear un administrador*/
+
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
 
 * {
@@ -107,4 +109,66 @@ h3.titulo::before {
     /* Cambia a gris claro al seleccionar */
     box-shadow: none;
     /* Quita la sombra al seleccionar */
+}
+
+/*Estilo del modal para eliminar a un administrador*/
+
+
+.modal_title{
+    color: #02113C;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.modal_description{
+    color: #4E5876;
+    margin-bottom: 1.5rem;
+}
+
+.modal_button{
+    background-color: #1E1EAE;
+    color: #fff;
+    border-radius: .5rem;
+    transition: .3s;
+    padding: 0.5rem 2.5rem;
+}
+
+.modal_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(var(--hue), 18%, 75%, .8);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: flex-end;
+    overflow: hidden;
+    transition: all .3s;
+    z-index: var(--z-modal);
+    visibility: hidden;
+    opacity: 0;  
+}
+
+.modal_content{
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    padding: 3rem 2rem 2rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.modal_img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.modal_close{
+    display: inline-flex;
+    color: #667085;
+    font-size: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
 }
