@@ -165,7 +165,9 @@ p {
 }
 
 .sizeCardCategoria{
+    max-height: 100%;
     height: 100%;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -229,4 +231,19 @@ button#btnWha:hover{
 
 button#btnWha:active {
     background-color: #0c9936;
+}
+
+/* Estilos específicos para pantallas con un ancho mínimo de 300px */
+@media screen and (max-width: 300px) {
+    .h2Contactanos{
+        font-size: 20px;
+    }
+
+    .pDescripcion{
+        font-size: 12px;
+    }
+
+    .datosP{
+        font-size: 12px;
+    }
 }
