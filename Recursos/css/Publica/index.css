@@ -247,3 +247,274 @@ button#btnWha:active {
         font-size: 12px;
     }
 }
+
+
+/*AQUI CSS PARTE DE ADRI*/
+
+/*ESTILO DEL BODY*/
+
+.title {
+    font-size: 250%;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Estilo card de datos*/
+
+.datos {
+    margin-right: 2.5%;
+}
+
+.cardData {
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.textt {
+    font-size: 20px;
+    font-weight: 500;
+    color: #61656E;
+}
+
+.linea {
+    margin-bottom: 10%;
+    color: #61656E;
+}
+
+.porcentaje {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.desc {
+    font-weight: 600;
+    font-size: 200%;
+}
+
+/*Card de imagenes*/
+
+.img-fluid {
+    border-radius: 10px;
+    width: 500px;
+    margin: 10px;
+    transition: transform 0.5s ease;
+}
+
+.img-fluid:hover {
+    transform: translateY(-10px);
+}
+
+/*ESTILO PARA LA MISION VISION Y VALORES*/
+.titleM {
+    margin-top: 15px;
+}
+
+.pt {
+    margin-bottom: 30px;
+    color: #61656E;
+    font-size: 100%;
+}
+
+.imgside {
+    margin-right: 5%;
+}
+
+.mision {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.imgLarge {
+    height: 100%;
+}
+
+/*Estilo para apartados de proyectos*/
+
+.proyecto {
+    color: black;
+    position: relative;
+    font-weight: 600;
+    font-size: 200%;
+    padding-left: 2%;
+    margin-bottom: 2%;
+
+}
+
+.proyecto::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: #ffc107;
+}
+
+.imagenes {
+    width: 100%;
+}
+
+.button {
+    width: 40%;
+    background-color: #FFBF3E;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #FFBF3E;
+    border-color: #FFBF3E;
+    color: white;
+}
+
+
+/*Estilo para apartado de servicios*/
+
+.serviciosApartados {
+    margin-top: 6%;
+}
+
+.imgServicios {
+    border-radius: 20px;
+    height: 70%;
+    width: 70%;
+}
+
+hr {
+    border-color: black;
+    border-width: 1px;
+}
+
+.services {
+    font-weight: 500;
+    font-size: 160%;
+}
+
+#descripcionAlquiler {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.button2{
+    width: 30%;
+    background-color: #FFBF3E;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.button2:hover{
+    background-color: #FFBF3E;
+    border-color: #FFBF3E;
+    color: white;
+}
+#boton{
+    background-color: #06065E;
+}
+
+
+/*TITULO PARA EL HEADER*/
+.amarrilo1 {
+    background-color: #FFBF3E;
+    color: white;
+}
+
+.azul1 {
+    color: #030368;
+}
+
+.nav-link:active {
+    color: #06065E;
+}
+
+.contactanosButton {
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+}
+
+header {
+    background-color: white;
+}
+
+.brdDiv {
+    width: 80%;
+    height: 80%;
+    border: #000000 solid 1px;
+}
+
+
+/*ESTILO DEL FOOTER*/
+footer {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.foot {
+    background-color: #7D7D7D;
+    padding: 3%;
+
+}
+
+
+.text {
+    margin-top: 5%;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.md {
+    font-size: 25px;
+    color: #F1B53C;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*ESPACIO PARA MEDIA QUERIES*/
+
+@media (max-width: 990px) {
+    .linea {
+        display: flex;
+        justify-content: center;
+    }
+    .desc{
+        margin-top: 4%;
+    }
+
+    .imgside{
+        margin-bottom: 4%;
+    }
+    .mision{
+        text-align: center;
+    }
+    .colum{
+        text-align: center;
+        margin: 0px;
+    }
+    .serviciosApartados{
+        text-align: center;
+    }
+    .foot{
+        text-align: center;
+    }
+}

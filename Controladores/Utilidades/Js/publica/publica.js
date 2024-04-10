@@ -55,6 +55,60 @@ const loadTemplate = async () => {
     `);
     //* Se agrega el pie de la página web después del contenido principal.
     MAIN.insertAdjacentHTML('afterend', `
-    
-`);
+    <footer>
+        <div class="container-fluid foot">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                    <img src="../../Recursos/Img/Publica/logo2.svg" class="rounded mx-auto d-block" alt="..." width="150px"
+                        height="200px">
+                </div>
+                <div class="col-lg-3 col-sm-12 text">
+                    <h3>LUGAR</h3>
+                    <ul>
+                        <li> <span class="mdi mdi-map-marker md"></span>Habit</li>
+                        <li><span class="mdi mdi-phone md"></span>7575757</li>
+                        <li><span class="mdi mdi-gmail md"></span> habit@gmail.com</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-2 col-sm-12 text">
+                    <h3>ATAJOS</h3>
+                    <ul>
+                        <li><a href="#">Acerca de Habit</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-12 text">
+                    <h3>REDES SOCIALES</h3>
+                    <ul>
+                        <li>
+                            <span class="mdi mdi-facebook"></span>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <span class="mdi mdi-instagram"></span>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <span class="mdi mdi-youtube"></span>
+                            <a href="#">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center text">
+                    <h6>Copyright © 2024 Habit Inmobiliaria.</h6>
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+    `);
 }
+
