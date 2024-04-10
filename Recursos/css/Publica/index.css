@@ -18,37 +18,6 @@ p {
     font-size: 20px;
 }
 
-/*!Estilo para parte de mini estadisticas*/
-.datos {
-    margin-right: 2.5%;
-}
-
-.cardData {
-    padding-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.textt {
-    font-size: 20px;
-    font-weight: 500;
-    color: #61656E;
-}
-
-.linea {
-    margin-bottom: 10%;
-    color: #61656E;
-}
-
-.porcentaje {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.desc {
-    font-weight: 600;
-    font-size: 200%;
-}
-
 /*!Estilo para parte de sobre nosotros*/
 #sobreNosotros {
     background-color: #06065E;
@@ -275,15 +244,13 @@ p {
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
+.linea{
+    margin-bottom: 10%;
+    color: #61656E;
+}
 .textt {
     font-size: 20px;
     font-weight: 500;
-    color: #61656E;
-}
-
-.linea {
-    margin-bottom: 10%;
     color: #61656E;
 }
 
@@ -418,77 +385,6 @@ hr {
 #boton{
     background-color: #06065E;
 }
-
-
-/*TITULO PARA EL HEADER*/
-.amarrilo1 {
-    background-color: #FFBF3E;
-    color: white;
-}
-
-.azul1 {
-    color: #030368;
-}
-
-.nav-link:active {
-    color: #06065E;
-}
-
-.contactanosButton {
-    height: 50px;
-    border: none;
-    border-radius: 4px;
-}
-
-header {
-    background-color: white;
-}
-
-.brdDiv {
-    width: 80%;
-    height: 80%;
-    border: #000000 solid 1px;
-}
-
-
-/*ESTILO DEL FOOTER*/
-footer {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-}
-
-h3 {
-    font-weight: 500;
-}
-
-.foot {
-    background-color: #7D7D7D;
-    padding: 3%;
-
-}
-
-
-.text {
-    margin-top: 5%;
-    color: white;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.md {
-    font-size: 25px;
-    color: #F1B53C;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 
 /*ESPACIO PARA MEDIA QUERIES*/
 
