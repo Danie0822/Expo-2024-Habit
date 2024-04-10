@@ -135,6 +135,7 @@ h3.titulo::before {
 .modal_button {
     background-color: #1E1EAE;
     color: #fff;
+    border: none;
     border-radius: .5rem;
     transition: .3s;
     padding: 0.5rem 2.5rem;
