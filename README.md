@@ -1,18 +1,31 @@
-# Bienvenido a la Página Web de Habit Inmobiliaria
+# Proyecto Habit Inmobiliaria
 
-Esta es una aplicación web moderna diseñada para simplificar el proceso de compra, venta y alquiler de bienes raíces a través de la plataforma de Habit Inmobiliaria. Esta aplicación ofrece una interfaz fácil de usar para los clientes y vendedores, brindando asesoramiento experto y una plataforma confiable para todas las transacciones inmobiliarias.
+## Descripción del Proyecto
 
-## Tecnologías Utilizadas
+Habit Inmobiliaria es una empresa enfocada en el rubro de la comercialización de bienes raíces, especializándose en la venta y alquiler de terrenos, casas, departamentos amueblados y locales comerciales. El objetivo principal de la empresa es brindar asesoría en el proceso de adquisición o venta de bienes raíces, simplificando el proceso de compra, venta y alquiler de propiedades mediante asesoramiento experto y una plataforma confiable para clientes y vendedores.
 
-- HTML5: Utilizado para estructurar el contenido de la página web.
-- CSS3: Utilizado para estilizar y dar diseño a la página web.
-- JavaScript: Utilizado para la interactividad y la lógica del cliente.
-- Bootstrap: Utilizado para el diseño responsivo y los componentes de la interfaz de usuario.
-- Node.js: Utilizado para crear la API backend para la gestión de datos y la seguridad de la aplicación.
+El proyecto consiste en el desarrollo de dos sitios web: uno público y otro administrativo. El sitio público proporcionará información sobre la empresa y los servicios que ofrece, así como un apartado para aquellas personas interesadas en vender o alquilar una propiedad a través de la empresa. El sitio web administrativo permitirá gestionar toda la información de manera eficiente, incluyendo la administración general de la empresa, propiedades y administradores de inmuebles.
 
-## Funcionalidades Principales
+Además, se desarrollará una aplicación móvil pública que permitirá a los usuarios visualizar los diferentes inmuebles que la empresa posee, así como un sistema de mensajería para facilitar la comunicación directa entre clientes y administradores de inmuebles.
 
-- **Página Informativa**: Presenta información sobre la empresa, sus servicios y cómo puede ayudar a los usuarios en el proceso de adquisición o venta de bienes raíces.
-- **Listados de Propiedades**: Muestra una lista de propiedades disponibles para la venta o alquiler, con detalles completos y fotos.
-- **Formulario de Contacto**: Permite a los usuarios enviar consultas o solicitar información adicional sobre las propiedades.
-- **Gestión de Usuarios y Propiedades**: A través de la API de Node.js, se gestionarán los usuarios, propiedades y transacciones de manera segura y eficiente.
+## Integrantes del Equipo
+
+- Daniel Alessandro Morales Sandoval
+  - Carné: 20190652
+  - Sección Técnica: 2A
+
+- Fernando José Gómez Martínez
+  - Carné: 20190369
+  - Sección Técnica: 2A
+
+- Josué Emiliano Valdés Jacobo
+  - Carné: 20190010
+  - Sección Técnica: 2A
+
+- Adriana Elizabeth Orellana Aguilar
+  - Carné: 20220287
+  - Sección Técnica: 2A
+
+- José Alejandro Sánchez Henríquez
+  - Carné: 20220141
+  - Sección Técnica: 2A
