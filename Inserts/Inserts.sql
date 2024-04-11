@@ -13,16 +13,6 @@ VALUES
 
 SELECT * FROM tb_clientes;
 
-INSERT INTO tb_blogs (titulo_blog, descripcion_blog, imagen_blog) 
-VALUES 
-('Experiencia increíble con Habit', 'Quiero compartir mi experiencia positiva trabajando con Habit. Su profesionalismo y atención al cliente son inigualables.', 'opinion1.jpg'),
-('Recomiendo Habit a todos', 'He tenido la mejor experiencia trabajando con Habit. Su equipo hizo que el proceso de compra de mi casa fuera fácil y sin estrés.', 'opinion2.jpg'),
-('Muy satisfecho con el servicio de Habit', 'Estoy muy satisfecho con el servicio que recibí de Habit. Encontraron la casa perfecta para mí y se aseguraron de que todo saliera a la perfección.', 'opinion3.jpg'),
-('Profesionales y confiables: Habit', 'Gracias a Habit por su profesionalismo y dedicación. Recomiendo encarecidamente sus servicios a cualquiera que esté buscando comprar o vender una propiedad.', 'opinion4.jpg'),
-('¡La mejor decisión que he tomado! - Habit', 'Trabajar con Habit fue la mejor decisión que he tomado en el proceso de compra de mi casa. Su equipo me guió en cada paso y se aseguró de que estuviera completamente satisfecho.', 'opinion5.jpg');
-
-SELECT * FROM tb_blogs; 
-
 INSERT INTO tb_administradores (nombre_administrador, telefono_administrador, email_administrador, clave_administrador, rol_administrador) 
 VALUES 
 ('Juan Pérez', '123-456-7890', 'juan_admin@gmail.com', 'clave123', 1),
@@ -37,6 +27,16 @@ VALUES
 ('Marta Fernández', '444-555-6666', 'marta_admin@gmail.com', 'clavestu', 0);
 
 SELECT * FROM tb_administradores;
+
+INSERT INTO tb_blogs (titulo_blog, descripcion_blog, imagen_blog, id_administrador) 
+VALUES 
+('Experiencia increíble con Habit', 'Quiero compartir mi experiencia positiva trabajando con Habit. Su profesionalismo y atención al cliente son inigualables.', 'opinion1.jpg',1),
+('Recomiendo Habit a todos', 'He tenido la mejor experiencia trabajando con Habit. Su equipo hizo que el proceso de compra de mi casa fuera fácil y sin estrés.', 'opinion2.jpg',2),
+('Muy satisfecho con el servicio de Habit', 'Estoy muy satisfecho con el servicio que recibí de Habit. Encontraron la casa perfecta para mí y se aseguraron de que todo saliera a la perfección.', 'opinion3.jpg',3),
+('Profesionales y confiables: Habit', 'Gracias a Habit por su profesionalismo y dedicación. Recomiendo encarecidamente sus servicios a cualquiera que esté buscando comprar o vender una propiedad.', 'opinion4.jpg',2),
+('¡La mejor decisión que he tomado! - Habit', 'Trabajar con Habit fue la mejor decisión que he tomado en el proceso de compra de mi casa. Su equipo me guió en cada paso y se aseguró de que estuviera completamente satisfecho.', 'opinion5.jpg',2);
+
+SELECT * FROM tb_blogs; 
 
 INSERT INTO tb_categorias_propiedades (nombre_categoria) 
 VALUES 

@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS Habit_Inmobiliaria;
+DROP DATABASE IF EXISTS habit_inmobiliaria;
 
-CREATE DATABASE IF NOT EXISTS Habit_Inmobiliaria CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS habit_inmobiliaria CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE Habit_Inmobiliaria;
+USE habit_inmobiliaria;
 
 -- Tabla para almacenar información de los clientes
 CREATE TABLE tb_clientes (
@@ -14,14 +14,6 @@ CREATE TABLE tb_clientes (
     estado_cliente ENUM('activo', 'inactivo') DEFAULT ('activo') NOT NULL
 ) ENGINE=INNODB;
 
--- Tabla para almacenar información de los blogs 
-CREATE TABLE tb_blogs (
-    id_blog INT AUTO_INCREMENT PRIMARY KEY,
-    titulo_blog VARCHAR(100) NOT NULL,
-    descripcion_blog TEXT NOT NULL,
-    fecha_inscripcion DATE DEFAULT (CURRENT_DATE),
-    imagen_blog VARCHAR(255) NOT NULL
-) ENGINE=INNODB;
 
 -- Tabla para almacenar información de los administradores
 CREATE TABLE tb_administradores (
@@ -31,6 +23,17 @@ CREATE TABLE tb_administradores (
     email_administrador VARCHAR(100) NOT NULL UNIQUE,
     clave_administrador VARCHAR(100) NOT NULL, 
     rol_administrador  BOOLEAN DEFAULT (0) NOT NULL
+) ENGINE=INNODB;
+
+-- Tabla para almacenar información de los blogs 
+CREATE TABLE tb_blogs (
+    id_blog INT AUTO_INCREMENT PRIMARY KEY,
+    titulo_blog VARCHAR(100) NOT NULL,
+    descripcion_blog TEXT NOT NULL,
+    fecha_inscripcion DATE DEFAULT (CURRENT_DATE),
+    imagen_blog VARCHAR(255) NOT NULL,
+    id_administrador INT NOT NULL,
+    CONSTRAINT fk_administrador_blog FOREIGN KEY (id_administrador) REFERENCES tb_administradores(id_administrador)
 ) ENGINE=INNODB;
 
 -- Tabla para almacenar las categorías de las propiedades
