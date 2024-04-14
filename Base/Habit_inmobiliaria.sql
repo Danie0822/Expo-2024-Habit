@@ -113,7 +113,9 @@ CREATE TABLE tb_estadisticas_busquedas (
     precio_min DECIMAL(10, 2) NOT NULL CHECK (precio_min > 0),
     precio_max DECIMAL(10, 2) NOT NULL CHECK (precio_max > 0),
     id_categoria INT NOT NULL,
+    id_zona INT NOT NULL,
     CONSTRAINT fk_clientes_busquedas FOREIGN KEY (id_cliente) REFERENCES tb_clientes(id_cliente),
+    CONSTRAINT fk_zonas_busquedas FOREIGN KEY (id_zona) REFERENCES tb_zonas_propiedades(id_zona),
     CONSTRAINT fk_categorias_busquedas FOREIGN KEY (id_categoria) REFERENCES tb_categorias_propiedades(id_categoria)
 ) ENGINE=INNODB;
 
